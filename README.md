@@ -12,7 +12,7 @@ Using nginx reverse proxy for load-balancing inbound requests to a web applicati
   - Has nginx installed and configured as a reverse proxy, for round-robin load balancing to backend internal servers.
 - **Internal server**
   - Isolated from the Internet, connected to the gateway server network.
-  - Running `apache2` web server, serving a copy of the web application
+  - Running `nginx` web server, serving a copy of the web application
     - To visualize the results for this example, the application is a sample HTML webpage indicating server ID that served the request
     - In reality it can be a copy of the same application transparent to the user.
 
