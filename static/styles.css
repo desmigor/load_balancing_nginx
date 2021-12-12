@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+/* ______________ Common CSS __________________*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #FBFFFE;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #4F5D75;
+    text-decoration: underline;
+    padding: 0 6px 0 6px;
+}
+
+a:hover{
+    color: #EF8354;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px;
+    border-bottom: 1px solid #E1E4EA;
+}
+
+.main-header1{
+    color: #2D3142;
+    font-size: 40px;
+    text-align: center;
+    padding: 60px 0px 24px 0px;
+}
+
+.main-header2{
+    color: #2D3142;
+    font-size: 40px;
+    text-align: center;
+    padding: 0px 0px 80px 0px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    color: #4F5D75;
+    border-top: 1px solid #E1E4EA;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.arrow {
+    padding-left: 60px;
+}
+
+.fotter-links {
+    display: flex;
+}
+
+.servers {
+    display: flex;
+    justify-content:center;
+    padding-bottom: 60px;
+}
+
+.server-1{
+    display: flex;
+    justify-content:start;
+    flex-direction: column;
+    padding-right: 120px;
+}
+
+.server-1-name{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+.server-2{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding-right: 120px;
+}
+
+.server-2-name{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.server-3{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.server-3-name{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
