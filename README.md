@@ -14,7 +14,7 @@
 
 In this project, we have designed a load balanced HTTP server architecture, implemented the idea using Nginx reverse-proxy, containerized the application using Docker, and deployed the containers to EC2 server instances on Amazon Web Services. It is also possible to run the setup locally by simply cloning the source files and running `docker-compose up` in the source directory. The final deployed result can be found at  [http://3.70.244.15/](http://3.70.244.15/) . 
 
-![](./images/video Demo.gif)
+![](./images/video_demo.gif)
 
 Our action plan is the following:
 
