@@ -4,15 +4,26 @@
 >
 > Team members:
 >
-> - Ahmad Nourallah
-> - Igor Mpore
-> - Rafik Hachana
+> - Ahmad Nouralla (a.shaaban@innopolis.university)
+> - Igor Mpore (i.mpore@innopolis.university)
+> - Rafik Hachana (r.hachana@innopolis.university)
 >
 > This project was done as a final assignment for the System and Network Administration course, Innopolis University, Fall semester 2021.
 
-## Introduction
+## Introduction: Our Goal
 
 In this project, we have designed a load balanced HTTP server architecture, implemented the idea using Nginx reverse-proxy, containerized the application using Docker, and deployed the containers to EC2 server instances on Amazon Web Services. It is also possible to run the setup locally by simply cloning the source files and running `docker-compose up` in the source directory. The final deployed result can be found at  [http://3.70.244.15/](http://3.70.244.15/) . 
+
+![](./images/video Demo.gif)
+
+Our action plan is the following:
+
+1. Designing the server architecture.
+2. Create the webpages.
+3. Create the necessary Nginx configuration.
+4. Containerize the application.
+5. Test locally with `docker-compose`
+6. Deploy on AWS.
 
 ## Architecture
 
@@ -167,3 +178,13 @@ docker run -d -p 80:80 gateway
 ___
 
 The setup is done, the result can be found at  [http://3.70.244.15/](http://3.70.244.15/) 
+
+## Difficulties faced
+
+We have experienced some setbacks while working on this project, and we have also had the initial intention to experiment with the Docker Swarm service as well, but it didn't turn out to be the best option for our deployment. Docker Swarm is mainly for programmatically deploying clusters, not for fixed size clusters where we need to keep track of where each code is deployed. Manually choosing where to deploy the containers turned out to be a better option. 
+
+Other small setbacks included common issues with specifying ports with Docker containers (forget to map to host ports when running a container from the image), correctly placing static style and image files so that the frontend HTML and style works properly.
+
+## Conclusion
+
+In this project, we have worked and gained practical experience with the Nginx reverse-proxy server, Docker images and containers, as well as docker-compose. We have also gained experience on how to set up a server cluster on AWS, working with the EC2 service (instances and security groups). This project was a good synthesis for the System and Network Administration course, as it has many of the taught aspects and topics of this domain.
