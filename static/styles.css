@@ -43,8 +43,11 @@ header {
 }
 
 footer{
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
     color: #4F5D75;
     border-top: 1px solid #E1E4EA;
     padding-top: 16px;
@@ -57,6 +60,7 @@ footer{
 
 .fotter-links {
     display: flex;
+    justify-content: center;
 }
 
 .servers {
